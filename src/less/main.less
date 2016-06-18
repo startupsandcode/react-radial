@@ -1,0 +1,22 @@
+@diameter: 500px;
+
+body{
+    margin: 0;
+    padding: 0;
+
+    .radial{
+        width: @diameter;
+        height: @diameter;
+        border-radius: @diameter;
+        background-color: #333;
+
+        .point{
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            background-color: #888;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
