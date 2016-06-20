@@ -44,8 +44,8 @@ var Radial = React.createClass({
         var distanceX = x - radius;
         var distanceY = y - radius;
         var angle = Math.atan2(distanceY,distanceX);
-        var xBound = Math.floor( radius + (radius * Math.cos(angle)));
-        var yBound = Math.floor( radius + (radius * Math.sin(angle)));
+        var xBound = radius + radius * Math.cos(angle);
+        var yBound = radius + radius * Math.sin(angle);
         return { 
             x: xBound,
             y: yBound,
